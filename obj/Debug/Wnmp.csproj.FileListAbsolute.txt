@@ -1,0 +1,10 @@
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\bin\Debug\Wnmp.exe.config
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\bin\Debug\Wnmp.exe
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\bin\Debug\Wnmp.pdb
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.csprojAssemblyReference.cache
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.Frm_Main.resources
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.Properties.Resources.resources
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.csproj.GenerateResource.cache
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.csproj.CoreCompileInputs.cache
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.exe
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.pdb
