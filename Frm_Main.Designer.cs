@@ -33,7 +33,6 @@
             this.UiLogBox = new System.Windows.Forms.RichTextBox();
             this.UiReload = new System.Windows.Forms.Button();
             this.UiQuit = new System.Windows.Forms.Button();
-            this.UiStop = new System.Windows.Forms.Button();
             this.BtnProcesses = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -51,7 +50,7 @@
             // 
             this.UiLogBox.Location = new System.Drawing.Point(-1, 3);
             this.UiLogBox.Name = "UiLogBox";
-            this.UiLogBox.Size = new System.Drawing.Size(800, 370);
+            this.UiLogBox.Size = new System.Drawing.Size(800, 369);
             this.UiLogBox.TabIndex = 1;
             this.UiLogBox.Text = "";
             // 
@@ -75,23 +74,13 @@
             this.UiQuit.UseVisualStyleBackColor = true;
             this.UiQuit.Click += new System.EventHandler(this.UiQuit_Click);
             // 
-            // UiStop
-            // 
-            this.UiStop.Location = new System.Drawing.Point(570, 391);
-            this.UiStop.Name = "UiStop";
-            this.UiStop.Size = new System.Drawing.Size(107, 47);
-            this.UiStop.TabIndex = 4;
-            this.UiStop.Text = "强制退出";
-            this.UiStop.UseVisualStyleBackColor = true;
-            this.UiStop.Click += new System.EventHandler(this.UiStop_Click);
-            // 
             // BtnProcesses
             // 
             this.BtnProcesses.Location = new System.Drawing.Point(684, 391);
             this.BtnProcesses.Name = "BtnProcesses";
             this.BtnProcesses.Size = new System.Drawing.Size(107, 47);
             this.BtnProcesses.TabIndex = 5;
-            this.BtnProcesses.Text = "显示进程";
+            this.BtnProcesses.Text = "显示服务进程";
             this.BtnProcesses.UseVisualStyleBackColor = true;
             this.BtnProcesses.Click += new System.EventHandler(this.BtnProcesses_Click);
             // 
@@ -101,7 +90,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnProcesses);
-            this.Controls.Add(this.UiStop);
             this.Controls.Add(this.UiQuit);
             this.Controls.Add(this.UiReload);
             this.Controls.Add(this.UiLogBox);
@@ -122,7 +110,6 @@
         private System.Windows.Forms.RichTextBox UiLogBox;
         private System.Windows.Forms.Button UiReload;
         private System.Windows.Forms.Button UiQuit;
-        private System.Windows.Forms.Button UiStop;
         private System.Windows.Forms.Button BtnProcesses;
     }
 }

@@ -8,3 +8,6 @@ D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.csproj.GenerateResource.cach
 D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.csproj.CoreCompileInputs.cache
 D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.exe
 D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.pdb
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\bin\Debug\Wei.dll
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\bin\Debug\Wei.pdb
+D:\WorkSpace_CSharp\vs2017\kule\Wnmp\obj\Debug\Wnmp.csproj.CopyComplete
