@@ -332,6 +332,35 @@ namespace Wnmp
                 if (!p.CloseMainWindow()) { p.Kill(); }
             }
             CloseService();
+            //关闭托盘图标
+            this.notifyIcon1.Visible = false;
+            this.notifyIcon1.Dispose();
+        }
+
+        private void Frm_Main_SizeChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.WindowState == FormWindowState.Minimized)
+                {
+                    this.Hide();
+                    notifyIcon1.Visible = true;
+                }
+            }catch(InvalidEnumArgumentException ex) { Log("隐藏到托盘时异常！"+ex.Message); }
+        }
+         
+
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Visible = true;
+                this.WindowState = FormWindowState.Normal;
+            }
+            catch (InvalidEnumArgumentException ex)
+            {
+                Log("从托盘显示时异常！" + ex.Message);
+            } 
         }
     }
     #endregion

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             this.UiStart = new System.Windows.Forms.Button();
             this.UiLogBox = new System.Windows.Forms.RichTextBox();
             this.UiReload = new System.Windows.Forms.Button();
             this.UiQuit = new System.Windows.Forms.Button();
             this.BtnProcesses = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // UiStart
@@ -84,6 +86,16 @@
             this.BtnProcesses.UseVisualStyleBackColor = true;
             this.BtnProcesses.Click += new System.EventHandler(this.BtnProcesses_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon1.BalloonTipText = "准确的来说现在还是Wnp，MySql还未集成";
+            this.notifyIcon1.BalloonTipTitle = "Wnmp";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Wnmp";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -100,6 +112,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wnmp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_Main_FormClosed);
+            this.SizeChanged += new System.EventHandler(this.Frm_Main_SizeChanged);
             this.ResumeLayout(false);
 
         }
@@ -111,6 +124,7 @@
         private System.Windows.Forms.Button UiReload;
         private System.Windows.Forms.Button UiQuit;
         private System.Windows.Forms.Button BtnProcesses;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 
