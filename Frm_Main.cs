@@ -129,7 +129,7 @@ namespace Wnmp
                 {
                     if (p.ProcessName.ToLower() == "nginx")
                     {
-                        RunCmd("D:&cd D:/wnmp&nginx -s stop");
+                        RunCmd("D:&cd "+dir+"&nginx -s stop");
                     }
                 }
             }
@@ -292,7 +292,7 @@ namespace Wnmp
         private void UiQuit_Click(object sender, EventArgs e)
         {
             CloseService();
-            RunCmd("D:&cd D:/wnmp&nginx -s quit", "退出服务");
+            RunCmd("D:&cd "+dir+"&nginx -s quit", "退出服务");
         }
          
         private void BtnProcesses_Click(object sender, EventArgs e)
@@ -326,7 +326,7 @@ namespace Wnmp
                 //}
                 //if (p.ProcessName.ToLower() == "nginx")
                 //{
-                //    RunCmd("D:&cd D:/wnmp&nginx -s stop");
+                //    RunCmd("D:&cd "+dir+"&nginx -s stop");
                 //}
                 //退出程序后直接结束进程
                 if (!p.CloseMainWindow()) { p.Kill(); }
